@@ -1,0 +1,20 @@
+<ion-header>
+
+  <ion-navbar color="primary">
+    <ion-title>Photos</ion-title>
+  </ion-navbar>
+
+</ion-header>
+
+
+<ion-content>
+
+  <ion-card *ngFor="let photo of photos">
+    <img src="assets/img/card.png" />
+    <ion-card-content>
+      <ion-card-title>
+        {{photo.title}}
+      </ion-card-title>
+    </ion-card-content>
+  </ion-card>
+</ion-content>
